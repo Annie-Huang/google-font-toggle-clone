@@ -2,6 +2,8 @@ Cloning Google Font's Light/Dark Mode Toggle (https://www.youtube.com/watch?v=Qt
 
 https://codepen.io/kevinpowell/pen/PomqjxO
 https://github.com/Annie-Huang/google-font-toggle-clone
+
+https://fonts.google.com/
 =======================================================================
 
 
