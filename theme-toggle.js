@@ -9,8 +9,12 @@ themeToggle.addEventListener('click', () => {
 function enableDarkMode() {
   document.body.classList.remove('light-theme');
   document.body.classList.add('dark-theme');
+  // themeToggle.ariaLabel = 'Switch to light theme';
+  themeToggle.setAttribute('aria-label', 'Switch to light theme');
 }
 function enableLightMode() {
   document.body.classList.remove('dark-theme');
   document.body.classList.add('light-theme');
+  // themeToggle.ariaLabel = 'Switch to dark theme';
+  themeToggle.setAttribute('aria-label', 'Switch to dark theme');
 }

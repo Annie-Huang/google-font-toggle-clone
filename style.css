@@ -44,10 +44,31 @@ body {
   opacity: 0.8;
   padding: 4rem;
   border-radius: 50%;
+
+  position: relative;
 }
 /* it's the same with and without svg here */
 #theme-toggle svg {
   fill: var(--clr-foreground);
+}
+/* The tooltip box */
+#theme-toggle::after {
+  content: attr(aria-label);
+  position: absolute;
+  color: var(--clr-background);
+  background: var(--clr-foreground);
+  font-size: 1.5rem;
+
+  /* these four things together will make it stay in the middle for the pseudo element */
+  width: max-content;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  top: 95%;
+  padding: 0.5em 1em;
+  border-radius: 0.125em;
+  opacity: 0.7;
 }
 #theme-toggle:hover,
 #theme-toggle:focus {
