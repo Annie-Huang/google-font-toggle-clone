@@ -18,6 +18,13 @@ body {
   background: 0;
   border: 0;
   opacity: 0.8;
+  padding: 4rem;
+  border-radius: 50%;
+}
+#theme-toggle:hover,
+#theme-toggle:hover {
+  opacity: 1; /* make it darker */
+  background: hsla(0, 0%, 50%, 0.2);
 }
 .toggle-circle {
   transform: translateX(-15%);
