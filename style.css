@@ -1,3 +1,16 @@
+:root {
+  --clr-foreground: hsl(0, 0%, 0%);
+  --clr-background: hsl(0, 0%, 100%);
+}
+
+/* https://stackoverflow.com/questions/57606960/how-can-i-emulate-prefers-color-scheme-media-query-in-chrome */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --clr-background: hsl(0, 0%, 0%);
+    --clr-foreground: hsl(0, 0%, 100%);
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -5,6 +18,9 @@
 }
 
 body {
+  background: var(--clr-background);
+  color: var(--clr-foreground);
+
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
