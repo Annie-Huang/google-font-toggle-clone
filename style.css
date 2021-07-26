@@ -17,4 +17,8 @@ body {
   cursor: pointer;
   background: 0;
   border: 0;
+  opacity: 0.8;
+}
+.toggle-circle {
+  transform: translateX(-15%);
 }
