@@ -51,7 +51,7 @@ body {
 #theme-toggle svg {
   fill: var(--clr-foreground);
 }
-/* The tooltip box */
+/* The tooltip box when on hover */
 #theme-toggle::after {
   content: attr(aria-label);
   position: absolute;
@@ -84,6 +84,11 @@ body {
   opacity: 0.7;
   transform: scale(1);
 }
+
 .toggle-circle {
+  transition: transform 250ms ease-out;
+}
+/* In light-theme, move the toggle-circle to the right so the moon shape can appear. */
+.light-theme .toggle-circle {
   transform: translateX(-15%);
 }
