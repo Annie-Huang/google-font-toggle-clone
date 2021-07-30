@@ -85,10 +85,20 @@ body {
   transform: scale(1);
 }
 
+/* Make the sun and the moon swaps */
 .toggle-circle {
   transition: transform 250ms ease-out;
 }
 /* In light-theme, move the toggle-circle to the right so the moon shape can appear. */
 .light-theme .toggle-circle {
   transform: translateX(-15%);
+}
+
+/* Make the outer shape sprinting */
+.toggle-sun {
+  transform-origin: center center;
+  transition: transform 500ms ease;
+}
+.light-theme .toggle-sun {
+  transform: rotate(0.5turn);
 }
