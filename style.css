@@ -68,6 +68,9 @@ body {
 .light-theme #theme-toggle::before {
   animation: pulseToLight 650ms ease-out;
 }
+.dark-theme #theme-toggle::before {
+  animation: pulseToDark 650ms ease-out;
+}
 /* The tooltip box when on hover */
 #theme-toggle::after {
   content: attr(aria-label);
@@ -122,6 +125,22 @@ body {
 }
 
 @keyframes pulseToLight {
+  0% {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+  10% {
+    transform: scale(1);
+  }
+  75% {
+    opacity: 1;
+  }
+  100 % {
+    opacity: 0;
+  }
+}
+/* pulseToDark and pulseToLight are the same animation, just create a copy to avoid writing reset in javascript */
+@keyframes pulseToDark {
   0% {
     transform: scale(0);
     opacity: 0.5;
