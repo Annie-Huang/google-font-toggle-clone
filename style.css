@@ -100,7 +100,9 @@ body {
   background: hsla(0, 0%, 50%, 0.15);
 }
 #theme-toggle:hover::after,
-#theme-toggle:focus::after {
+/*#theme-toggle:focus::after {*/
+#theme-toggle:focus-visible::after {
+  /* i don't see the different between focus and focus-visible */
   opacity: 0.7;
   transform: scale(1);
 }
