@@ -18,3 +18,14 @@ function enableLightMode() {
   // themeToggle.ariaLabel = 'Switch to dark theme';
   themeToggle.setAttribute('aria-label', 'Switch to dark theme');
 }
+
+function setThemePreference() {
+  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    // console.log('i like it dark.');
+    enableDarkMode();
+    return;
+  }
+  // console.log('i like it light');
+  enableLightMode();
+}
+document.onload = setThemePreference();

@@ -4,12 +4,14 @@
 }
 
 /* https://stackoverflow.com/questions/57606960/how-can-i-emulate-prefers-color-scheme-media-query-in-chrome */
+/* Devtool -> vertical ... -> More tools -> Rendering -> Emulate CSs media feature prefers-color-scheme -> prefers-color-scheme: dark */
 @media (prefers-color-scheme: dark) {
   :root {
     --clr-background: hsl(0, 0%, 0%);
     --clr-foreground: hsl(0, 0%, 100%);
   }
 }
+
 .light-theme {
   --clr-foreground: hsl(0, 0%, 0%);
   --clr-background: hsl(0, 0%, 100%);
